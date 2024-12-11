@@ -16,7 +16,6 @@ public class PersonMo : MonoBehaviour
 
     void Update()
     {
-        // Рух вперед
         if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("IsMovingForward", true);
@@ -26,7 +25,6 @@ public class PersonMo : MonoBehaviour
             animator.SetBool("IsMovingForward", false);
         }
 
-        // Рух назад
         if (Input.GetKey(KeyCode.S))
         {
             animator.SetBool("IsMovingBackward", true);
@@ -35,7 +33,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsMovingBackward", false);
         }
-        // Рух ліворуч
+
         if (Input.GetKey(KeyCode.A))
         {
             animator.SetBool("IsMovingLeft", true);
@@ -44,7 +42,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsMovingLeft", false);
         }
-        // Рух праворуч
+
         if (Input.GetKey(KeyCode.D))
         {
             animator.SetBool("IsMovingRight", true);
@@ -53,7 +51,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsMovingRight", false);
         }
-        // Стрибок
+
         if (Input.GetKey(KeyCode.Space))
         {
             animator.SetBool("IsJump", true);
@@ -62,7 +60,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsJump", false);
         }
-        // Біг вперед
+
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)) 
         {
             animator.SetBool("IsRunForward", true);
@@ -71,7 +69,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsRunForward", false);
         }
-        // Біг вправо
+
         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunRight", true);
@@ -80,7 +78,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsRunRight", false);
         }
-        // Біг вліво
+
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunLeft", true);
@@ -89,7 +87,7 @@ public class PersonMo : MonoBehaviour
         {
             animator.SetBool("IsRunLeft", false);
         }
-        // Біг назад
+        
         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
         {
             animator.SetBool("IsRunBackward", true);
